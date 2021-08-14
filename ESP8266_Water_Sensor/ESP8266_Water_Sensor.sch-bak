@@ -1323,28 +1323,6 @@ Wire Notes Line
 Text Notes 7750 3700 0    79   ~ 0
 WLED Output
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 60EC3FA3
-P 10450 6350
-F 0 "H4" H 10550 6396 50  0000 L CNN
-F 1 "MountingHole" H 10550 6305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 6350 50  0001 C CNN
-F 3 "~" H 10450 6350 50  0001 C CNN
-	1    10450 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 60EC42BD
-P 10450 6150
-F 0 "H3" H 10550 6196 50  0000 L CNN
-F 1 "MountingHole" H 10550 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 6150 50  0001 C CNN
-F 3 "~" H 10450 6150 50  0001 C CNN
-	1    10450 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H2
 U 1 1 60EC4763
 P 10450 5950

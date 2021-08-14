@@ -1328,7 +1328,7 @@ U 1 1 60EC4763
 P 10450 5950
 F 0 "H2" H 10550 5996 50  0000 L CNN
 F 1 "MountingHole" H 10550 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 5950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 10450 5950 50  0001 C CNN
 F 3 "~" H 10450 5950 50  0001 C CNN
 	1    10450 5950
 	1    0    0    -1  
@@ -1339,7 +1339,7 @@ U 1 1 60EC4983
 P 10450 5750
 F 0 "H1" H 10550 5796 50  0000 L CNN
 F 1 "MountingHole" H 10550 5705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 5750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 10450 5750 50  0001 C CNN
 F 3 "~" H 10450 5750 50  0001 C CNN
 	1    10450 5750
 	1    0    0    -1  
