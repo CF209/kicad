@@ -1,0 +1,51 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP ESP-WROOM-02D_M1102H3200PH3Q0_
+D WiFi Modules (802.11) SMD Module, ESP8266EX, 32Mbits SPI flash, UART Mode, PCB antenna
+K
+F 
+$ENDCMP
+#
+$CMP NRS6045T100MMGK
+D Taiyo Yuden NRS Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 10 uH +/-20% Wire-Wound 3.1A Idc
+K
+F http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=NRS6045T100MMGK&fileName=NRS6045T100MMGK_SS&mode=specSheetDownload
+$ENDCMP
+#
+$CMP AP6502SP-13
+D 340kHz 18V 2A DC/DC Buck Converter SOIC8 DiodesZetex AP6502SP-13, Buck Converter, 2A, Adjustable, 0.925  16 V, 8-Pin SOIC
+K
+F https://www.diodes.com/assets/Datasheets/AP6502.pdf
+$ENDCMP
+#
+$CMP 691137710002
+D Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole
+K
+F https://katalog.we-online.com/em/datasheet/691137710002.pdf
+$ENDCMP
+#
+$CMP DMN2029USD-13
+D DMN2029USD-13 Dual N-Channel MOSFET, 6.9 A, 20 V, 8-Pin SOIC Diodes Inc
+K
+F https://componentsearchengine.com/Datasheets/1/DMN2029USD-13.pdf
+$ENDCMP
+#
+$CMP 691137710003
+D Barrier Terminal Blocks WR-TBL Terminal block - Wire protector - THT
+K
+F https://www.we-online.com/catalog/datasheet/691137710003.pdf
+$ENDCMP
+#
+$CMP LL3303F065QG
+D Pushbutton Switches 50mA 12VDC F065 7.0mm Gull Wing
+K
+F http://spec_sheets.e-switch.com/specs/P090008.pdf
+$ENDCMP
+#
+#End Doc Library

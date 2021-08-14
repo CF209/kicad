@@ -1,0 +1,37 @@
+update=5/18/2017 2:07:15 PM
+version=1
+last_client=kicad
+[general]
+version=1
+[cvpcb]
+version=1
+NetIExt=net
+[pcbnew]
+version=1
+PageLayoutDescrFile=
+LastNetListRead=ZOPT220x UV Sensor Breakout.net
+PadDrill=0.762
+PadDrillOvalY=0.762
+PadSizeH=1.524
+PadSizeV=1.524
+PcbTextSizeV=1.27
+PcbTextSizeH=1.27
+PcbTextThickness=0.254
+ModuleTextSizeV=1
+ModuleTextSizeH=1
+ModuleTextSizeThickness=0.15
+SolderMaskClearance=0.2
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.15
+ModuleOutlineThickness=0.15
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+LibName1=power
+LibName2=conn
+LibName3=device
+LibName4=leds
+LibName5=mechanical
+LibName6=C:/Users/nathan.seidle/Dropbox/Projects/SparkFun-Kicad-Libraries/Components/SparkFun_SchematicComponents
