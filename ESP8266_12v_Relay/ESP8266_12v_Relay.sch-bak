@@ -326,26 +326,22 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Open JP2
 U 1 1 60D0AD6A
-P 5500 5900
-F 0 "JP2" H 5500 6105 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5500 6014 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5500 5900 50  0001 C CNN
-F 3 "~" H 5500 5900 50  0001 C CNN
-	1    5500 5900
+P 1500 3300
+F 0 "JP2" H 1500 3505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1500 3414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1500 3300 50  0001 C CNN
+F 3 "~" H 1500 3300 50  0001 C CNN
+	1    1500 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 5900 4750 5900
+	1350 3300 750  3300
 Wire Wire Line
-	5650 5900 6300 5900
-Text Label 4750 5900 0    50   ~ 0
+	1650 3300 2300 3300
+Text Label 750  3300 0    50   ~ 0
 GPIO16
-Text Label 6300 5900 2    50   ~ 0
+Text Label 2300 3300 2    50   ~ 0
 ESP_RST_L
-Text Label 750  4250 0    50   ~ 0
-PWM0
-Text Label 750  4450 0    50   ~ 0
-PWM1
 Wire Notes Line
 	3500 600  3500 2800
 Wire Notes Line
@@ -379,66 +375,15 @@ Wire Notes Line
 Text Notes 4800 6750 0    79   ~ 0
 12V Input
 Wire Notes Line
-	4600 6100 6500 6100
+	600  3500 2500 3500
 Wire Notes Line
-	6500 6100 6500 5500
+	2500 3500 2500 2900
 Wire Notes Line
-	6500 5500 4600 5500
+	2500 2900 600  2900
 Wire Notes Line
-	4600 5500 4600 6100
-Text Notes 4650 5600 0    49   ~ 0
+	600  2900 600  3500
+Text Notes 650  3000 0    49   ~ 0
 Connect for deep sleep mode
-$Comp
-L Device:R R9
-U 1 1 60FD2C6E
-P 1150 4650
-F 0 "R9" H 1220 4696 50  0000 L CNN
-F 1 "10k" H 1220 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1080 4650 50  0001 C CNN
-F 3 "~" H 1150 4650 50  0001 C CNN
-	1    1150 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR024
-U 1 1 60FD3230
-P 1150 4850
-F 0 "#PWR024" H 1150 4600 50  0001 C CNN
-F 1 "GND" H 1155 4677 50  0000 C CNN
-F 2 "" H 1150 4850 50  0001 C CNN
-F 3 "" H 1150 4850 50  0001 C CNN
-	1    1150 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 60FD3582
-P 1450 4650
-F 0 "R10" H 1520 4696 50  0000 L CNN
-F 1 "10k" H 1520 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1380 4650 50  0001 C CNN
-F 3 "~" H 1450 4650 50  0001 C CNN
-	1    1450 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 60FD3F49
-P 1450 4850
-F 0 "#PWR026" H 1450 4600 50  0001 C CNN
-F 1 "GND" H 1455 4677 50  0000 C CNN
-F 2 "" H 1450 4850 50  0001 C CNN
-F 3 "" H 1450 4850 50  0001 C CNN
-	1    1450 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 4500 1450 4450
-Connection ~ 1450 4450
-Wire Wire Line
-	1450 4800 1450 4850
-Wire Wire Line
-	1150 4800 1150 4850
 $Comp
 L SamacSys_Parts:ESP-WROOM-02D_M1102H3200PH3Q0_ U1
 U 1 1 60D47803
@@ -690,12 +635,12 @@ Wire Wire Line
 $Comp
 L Device:C C2
 U 1 1 60E34EEA
-P 1500 7150
-F 0 "C2" H 1615 7196 50  0000 L CNN
-F 1 "22uF" H 1615 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1538 7000 50  0001 C CNN
-F 3 "~" H 1500 7150 50  0001 C CNN
-	1    1500 7150
+P 1300 7150
+F 0 "C2" H 1415 7196 50  0000 L CNN
+F 1 "22uF" H 1415 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1338 7000 50  0001 C CNN
+F 3 "~" H 1300 7150 50  0001 C CNN
+	1    1300 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -715,99 +660,95 @@ Connection ~ 800  6150
 $Comp
 L power:+3V3 #PWR08
 U 1 1 60E40094
-P 1500 6900
-F 0 "#PWR08" H 1500 6750 50  0001 C CNN
-F 1 "+3V3" H 1515 7073 50  0000 C CNN
-F 2 "" H 1500 6900 50  0001 C CNN
-F 3 "" H 1500 6900 50  0001 C CNN
-	1    1500 6900
+P 1300 6900
+F 0 "#PWR08" H 1300 6750 50  0001 C CNN
+F 1 "+3V3" H 1315 7073 50  0000 C CNN
+F 2 "" H 1300 6900 50  0001 C CNN
+F 3 "" H 1300 6900 50  0001 C CNN
+	1    1300 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 60E41FCC
-P 1950 7150
-F 0 "C4" H 2065 7196 50  0000 L CNN
-F 1 "22uF" H 2065 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1988 7000 50  0001 C CNN
-F 3 "~" H 1950 7150 50  0001 C CNN
-	1    1950 7150
+P 1750 7150
+F 0 "C4" H 1865 7196 50  0000 L CNN
+F 1 "22uF" H 1865 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1788 7000 50  0001 C CNN
+F 3 "~" H 1750 7150 50  0001 C CNN
+	1    1750 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 60E423FC
-P 1950 7400
-F 0 "#PWR010" H 1950 7150 50  0001 C CNN
-F 1 "GND" H 1955 7227 50  0000 C CNN
-F 2 "" H 1950 7400 50  0001 C CNN
-F 3 "" H 1950 7400 50  0001 C CNN
-	1    1950 7400
+P 2200 7400
+F 0 "#PWR010" H 2200 7150 50  0001 C CNN
+F 1 "GND" H 2205 7227 50  0000 C CNN
+F 2 "" H 2200 7400 50  0001 C CNN
+F 3 "" H 2200 7400 50  0001 C CNN
+	1    2200 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 6900 1500 6950
+	1300 6900 1300 6950
 Wire Wire Line
-	1500 6950 1950 6950
+	1300 6950 1750 6950
 Wire Wire Line
-	1950 6950 1950 7000
-Connection ~ 1500 6950
+	1750 6950 1750 7000
+Connection ~ 1300 6950
 Wire Wire Line
-	1500 6950 1500 7000
+	1300 6950 1300 7000
 Wire Wire Line
-	1500 7300 1500 7350
+	1300 7300 1300 7350
 Wire Wire Line
-	1500 7350 1950 7350
+	1300 7350 1750 7350
 Wire Wire Line
-	1950 7350 1950 7300
+	1750 7350 1750 7300
 Wire Wire Line
-	1950 7350 1950 7400
-Connection ~ 1950 7350
+	2200 7350 2200 7400
+Connection ~ 1750 7350
 $Comp
 L power:+12V #PWR013
 U 1 1 60E6AAEE
-P 2400 6900
-F 0 "#PWR013" H 2400 6750 50  0001 C CNN
-F 1 "+12V" H 2415 7073 50  0000 C CNN
-F 2 "" H 2400 6900 50  0001 C CNN
-F 3 "" H 2400 6900 50  0001 C CNN
-	1    2400 6900
+P 2700 6900
+F 0 "#PWR013" H 2700 6750 50  0001 C CNN
+F 1 "+12V" H 2715 7073 50  0000 C CNN
+F 2 "" H 2700 6900 50  0001 C CNN
+F 3 "" H 2700 6900 50  0001 C CNN
+	1    2700 6900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 60E6B0C9
-P 2400 7150
-F 0 "C5" H 2515 7196 50  0000 L CNN
-F 1 "10uF" H 2515 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2438 7000 50  0001 C CNN
-F 3 "~" H 2400 7150 50  0001 C CNN
-	1    2400 7150
+P 2700 7150
+F 0 "C5" H 2815 7196 50  0000 L CNN
+F 1 "10uF" H 2815 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2738 7000 50  0001 C CNN
+F 3 "~" H 2700 7150 50  0001 C CNN
+	1    2700 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 60E6BFA2
-P 2850 7400
-F 0 "#PWR014" H 2850 7150 50  0001 C CNN
-F 1 "GND" H 2855 7227 50  0000 C CNN
-F 2 "" H 2850 7400 50  0001 C CNN
-F 3 "" H 2850 7400 50  0001 C CNN
-	1    2850 7400
+P 3150 7400
+F 0 "#PWR014" H 3150 7150 50  0001 C CNN
+F 1 "GND" H 3155 7227 50  0000 C CNN
+F 2 "" H 3150 7400 50  0001 C CNN
+F 3 "" H 3150 7400 50  0001 C CNN
+	1    3150 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 7300 2400 7350
-Wire Wire Line
-	2400 6900 2400 6950
+	2700 7300 2700 7350
 Wire Wire Line
 	1400 1600 900  1600
 Wire Wire Line
 	1400 1700 900  1700
 Wire Wire Line
 	900  1800 1400 1800
-Wire Wire Line
-	1400 1900 900  1900
 Wire Wire Line
 	1400 2000 900  2000
 Wire Wire Line
@@ -873,15 +814,13 @@ GPIO4
 Text Label 3250 1800 2    50   ~ 0
 GPIO5
 Text Label 3250 2000 2    50   ~ 0
-ESP_TOUT
-Text Label 900  1800 0    50   ~ 0
-PWM0
+TOUT
 Text Label 900  1900 0    50   ~ 0
 PWM1
 Text Label 900  1700 0    50   ~ 0
 GPIO14
 Text Label 900  2000 0    50   ~ 0
-PWM2
+GPIO15
 Text Label 3250 2100 2    50   ~ 0
 GPIO16
 Wire Wire Line
@@ -963,23 +902,6 @@ Wire Notes Line
 Text Notes 650  750  0    79   ~ 0
 ESP Module
 $Comp
-L SamacSys_Parts:691137710002 J3
-U 1 1 6118FF04
-P 3900 4750
-F 0 "J3" H 4528 4746 50  0000 L CNN
-F 1 "691137710002" H 4528 4655 50  0000 L CNN
-F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 4550 4850 50  0001 L CNN
-F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 4550 4750 50  0001 L CNN
-F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 4550 4650 50  0001 L CNN "Description"
-F 5 "11.6" H 4550 4550 50  0001 L CNN "Height"
-F 6 "710-691137710002" H 4550 4450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 4550 4350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 4550 4250 50  0001 L CNN "Manufacturer_Name"
-F 9 "691137710002" H 4550 4150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3900 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L SamacSys_Parts:691137710002 J2
 U 1 1 61192815
 P 5250 7150
@@ -994,23 +916,6 @@ F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBT
 F 8 "Wurth Elektronik" H 5900 6650 50  0001 L CNN "Manufacturer_Name"
 F 9 "691137710002" H 5900 6550 50  0001 L CNN "Manufacturer_Part_Number"
 	1    5250 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:691137710002 J4
-U 1 1 61192ED3
-P 3950 4050
-F 0 "J4" H 4578 4046 50  0000 L CNN
-F 1 "691137710002" H 4578 3955 50  0000 L CNN
-F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 4600 4150 50  0001 L CNN
-F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 4600 4050 50  0001 L CNN
-F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 4600 3950 50  0001 L CNN "Description"
-F 5 "11.6" H 4600 3850 50  0001 L CNN "Height"
-F 6 "710-691137710002" H 4600 3750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 4600 3650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 4600 3550 50  0001 L CNN "Manufacturer_Name"
-F 9 "691137710002" H 4600 3450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3950 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1095,134 +1000,6 @@ Wire Notes Line
 	6050 600  8200 600 
 Wire Notes Line
 	8200 600  8200 2600
-$Comp
-L SamacSys_Parts:DMN2029USD-13 U3
-U 1 1 60E1F116
-P 1850 4150
-F 0 "U3" H 2350 4415 50  0000 C CNN
-F 1 "DMN2029USD-13" H 2350 4324 50  0000 C CNN
-F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 2700 4250 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/DMN2029USD-13.pdf" H 2700 4150 50  0001 L CNN
-F 4 "DMN2029USD-13 Dual N-Channel MOSFET, 6.9 A, 20 V, 8-Pin SOIC Diodes Inc" H 2700 4050 50  0001 L CNN "Description"
-F 5 "1.75" H 2700 3950 50  0001 L CNN "Height"
-F 6 "621-DMN2029USD-13" H 2700 3850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMN2029USD-13" H 2700 3750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Diodes Inc." H 2700 3650 50  0001 L CNN "Manufacturer_Name"
-F 9 "DMN2029USD-13" H 2700 3550 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1850 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR027
-U 1 1 60E4D41C
-P 1750 4650
-F 0 "#PWR027" H 1750 4400 50  0001 C CNN
-F 1 "GND" H 1755 4477 50  0000 C CNN
-F 2 "" H 1750 4650 50  0001 C CNN
-F 3 "" H 1750 4650 50  0001 C CNN
-	1    1750 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 4650 1750 4350
-Wire Wire Line
-	1750 4150 1850 4150
-Wire Wire Line
-	1850 4350 1750 4350
-Connection ~ 1750 4350
-Wire Wire Line
-	1750 4350 1750 4150
-Wire Wire Line
-	2850 4250 2950 4250
-Wire Wire Line
-	2950 4250 2950 4150
-Wire Wire Line
-	2950 4150 2850 4150
-Wire Wire Line
-	2850 4350 2950 4350
-Wire Wire Line
-	2950 4350 2950 4450
-Wire Wire Line
-	2950 4450 2850 4450
-Wire Wire Line
-	1450 4450 1850 4450
-Wire Wire Line
-	750  4450 1450 4450
-Wire Wire Line
-	1150 4500 1150 4250
-Wire Wire Line
-	1150 4250 1850 4250
-Wire Wire Line
-	1150 4250 750  4250
-Connection ~ 1150 4250
-Connection ~ 2950 4150
-Connection ~ 2950 4350
-$Comp
-L SamacSys_Parts:FM4004W-W D1
-U 1 1 60F0258D
-P 3450 3400
-F 0 "D1" V 3704 3530 50  0000 L CNN
-F 1 "FM4004W-W" V 3795 3530 50  0001 L CNN
-F 2 "SamacSys_Parts:DIOM5025X231N" H 3900 3400 50  0001 L CNN
-F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 3900 3300 50  0001 L CNN
-F 4 "Rectifiers 1A, 400V" H 3900 3200 50  0001 L CNN "Description"
-F 5 "2.31" H 3900 3100 50  0001 L CNN "Height"
-F 6 "583-FM4004W-W" H 3900 3000 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 3900 2900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Rectron" H 3900 2800 50  0001 L CNN "Manufacturer_Name"
-F 9 "FM4004W-W" H 3900 2700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3450 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:FM4004W-W D2
-U 1 1 60F0D6B4
-P 3050 3450
-F 0 "D2" V 3300 3200 50  0000 L CNN
-F 1 "FM4004W-W" V 3400 2850 50  0000 L CNN
-F 2 "SamacSys_Parts:DIOM5025X231N" H 3500 3450 50  0001 L CNN
-F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 3500 3350 50  0001 L CNN
-F 4 "Rectifiers 1A, 400V" H 3500 3250 50  0001 L CNN "Description"
-F 5 "2.31" H 3500 3150 50  0001 L CNN "Height"
-F 6 "583-FM4004W-W" H 3500 3050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 3500 2950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Rectron" H 3500 2850 50  0001 L CNN "Manufacturer_Name"
-F 9 "FM4004W-W" H 3500 2750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3050 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+12V #PWR032
-U 1 1 60F3A27D
-P 3050 3350
-F 0 "#PWR032" H 3050 3200 50  0001 C CNN
-F 1 "+12V" H 3065 3523 50  0000 C CNN
-F 2 "" H 3050 3350 50  0001 C CNN
-F 3 "" H 3050 3350 50  0001 C CNN
-	1    3050 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR033
-U 1 1 60F7ED86
-P 3800 4650
-F 0 "#PWR033" H 3800 4500 50  0001 C CNN
-F 1 "+12V" H 3815 4823 50  0000 C CNN
-F 2 "" H 3800 4650 50  0001 C CNN
-F 3 "" H 3800 4650 50  0001 C CNN
-	1    3800 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 4350 3600 4850
-Wire Wire Line
-	3600 4850 3900 4850
-Wire Wire Line
-	3800 4750 3800 4650
-Wire Wire Line
-	3800 4750 3900 4750
-Wire Notes Line
-	5550 5100 600  5100
 Text Label 1900 6150 0    39   ~ 0
 U2_SW
 Text Label 1850 5700 0    39   ~ 0
@@ -1233,356 +1010,390 @@ Text Label 3700 6150 0    39   ~ 0
 U2_COMP
 Text Label 3200 6600 0    39   ~ 0
 U2_FB
-Text Label 3100 4150 0    39   ~ 0
-PWM0_D
-Text Label 3100 4350 0    39   ~ 0
-PWM1_D
 Text Label 3400 6050 0    39   ~ 0
 U2_EN
-Wire Wire Line
-	2950 4150 3450 4150
-Wire Wire Line
-	2950 4350 3050 4350
-Wire Wire Line
-	3050 3350 3050 3450
-Wire Wire Line
-	3050 4050 3050 4350
-Connection ~ 3050 4350
-Wire Wire Line
-	3050 4350 3600 4350
+Text Label 900  1800 0    50   ~ 0
+PWM0
 $Comp
-L power:+12V #PWR06
-U 1 1 60E0B360
-P 3850 3950
-F 0 "#PWR06" H 3850 3800 50  0001 C CNN
-F 1 "+12V" H 3865 4123 50  0000 C CNN
-F 2 "" H 3850 3950 50  0001 C CNN
-F 3 "" H 3850 3950 50  0001 C CNN
-	1    3850 3950
+L Device:C C13
+U 1 1 60E69FAA
+P 3150 7150
+F 0 "C13" H 3265 7196 50  0000 L CNN
+F 1 "10uF" H 3265 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3188 7000 50  0001 C CNN
+F 3 "~" H 3150 7150 50  0001 C CNN
+	1    3150 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3950 3850 4050
+	3150 7000 3150 6950
 Wire Wire Line
-	3850 4050 3950 4050
+	3150 6950 2700 6950
 Wire Wire Line
-	3450 4000 3450 4150
-Connection ~ 3450 4150
+	2700 6900 2700 6950
+Connection ~ 2700 6950
 Wire Wire Line
-	3450 4150 3950 4150
-$Comp
-L power:+12V #PWR03
-U 1 1 60E1B204
-P 3450 3350
-F 0 "#PWR03" H 3450 3200 50  0001 C CNN
-F 1 "+12V" H 3465 3523 50  0000 C CNN
-F 2 "" H 3450 3350 50  0001 C CNN
-F 3 "" H 3450 3350 50  0001 C CNN
-	1    3450 3350
-	1    0    0    -1  
-$EndComp
+	2700 6950 2700 7000
 Wire Wire Line
-	3450 3350 3450 3400
-Wire Notes Line
-	600  2850 5550 2850
-Wire Notes Line
-	5550 2850 5550 5100
-Wire Notes Line
-	600  2850 600  5100
-Text Label 5900 4250 0    50   ~ 0
-PWM2
-Text Label 5900 4450 0    50   ~ 0
-PWM3
-$Comp
-L Device:R R11
-U 1 1 60E9DB9D
-P 6300 4650
-F 0 "R11" H 6370 4696 50  0000 L CNN
-F 1 "10k" H 6370 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6230 4650 50  0001 C CNN
-F 3 "~" H 6300 4650 50  0001 C CNN
-	1    6300 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 60E9DBA3
-P 6300 4850
-F 0 "#PWR09" H 6300 4600 50  0001 C CNN
-F 1 "GND" H 6305 4677 50  0000 C CNN
-F 2 "" H 6300 4850 50  0001 C CNN
-F 3 "" H 6300 4850 50  0001 C CNN
-	1    6300 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 60E9DBA9
-P 6600 4650
-F 0 "R12" H 6670 4696 50  0000 L CNN
-F 1 "10k" H 6670 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6530 4650 50  0001 C CNN
-F 3 "~" H 6600 4650 50  0001 C CNN
-	1    6600 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR028
-U 1 1 60E9DBAF
-P 6600 4850
-F 0 "#PWR028" H 6600 4600 50  0001 C CNN
-F 1 "GND" H 6605 4677 50  0000 C CNN
-F 2 "" H 6600 4850 50  0001 C CNN
-F 3 "" H 6600 4850 50  0001 C CNN
-	1    6600 4850
-	1    0    0    -1  
-$EndComp
+	2700 7350 3150 7350
 Wire Wire Line
-	6600 4500 6600 4450
-Connection ~ 6600 4450
+	3150 7350 3150 7300
 Wire Wire Line
-	6600 4800 6600 4850
-Wire Wire Line
-	6300 4800 6300 4850
-$Comp
-L SamacSys_Parts:691137710002 J1
-U 1 1 60E9DBBF
-P 9050 4750
-F 0 "J1" H 9678 4746 50  0000 L CNN
-F 1 "691137710002" H 9678 4655 50  0000 L CNN
-F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 9700 4850 50  0001 L CNN
-F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 9700 4750 50  0001 L CNN
-F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 9700 4650 50  0001 L CNN "Description"
-F 5 "11.6" H 9700 4550 50  0001 L CNN "Height"
-F 6 "710-691137710002" H 9700 4450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 9700 4350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 9700 4250 50  0001 L CNN "Manufacturer_Name"
-F 9 "691137710002" H 9700 4150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9050 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:691137710002 J6
-U 1 1 60E9DBCB
-P 9100 4050
-F 0 "J6" H 9728 4046 50  0000 L CNN
-F 1 "691137710002" H 9728 3955 50  0000 L CNN
-F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 9750 4150 50  0001 L CNN
-F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 9750 4050 50  0001 L CNN
-F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 9750 3950 50  0001 L CNN "Description"
-F 5 "11.6" H 9750 3850 50  0001 L CNN "Height"
-F 6 "710-691137710002" H 9750 3750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 9750 3650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 9750 3550 50  0001 L CNN "Manufacturer_Name"
-F 9 "691137710002" H 9750 3450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9100 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:DMN2029USD-13 U4
-U 1 1 60E9DBD7
-P 7000 4150
-F 0 "U4" H 7500 4415 50  0000 C CNN
-F 1 "DMN2029USD-13" H 7500 4324 50  0000 C CNN
-F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 7850 4250 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/DMN2029USD-13.pdf" H 7850 4150 50  0001 L CNN
-F 4 "DMN2029USD-13 Dual N-Channel MOSFET, 6.9 A, 20 V, 8-Pin SOIC Diodes Inc" H 7850 4050 50  0001 L CNN "Description"
-F 5 "1.75" H 7850 3950 50  0001 L CNN "Height"
-F 6 "621-DMN2029USD-13" H 7850 3850 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMN2029USD-13" H 7850 3750 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Diodes Inc." H 7850 3650 50  0001 L CNN "Manufacturer_Name"
-F 9 "DMN2029USD-13" H 7850 3550 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 60E9DBDD
-P 6900 4650
-F 0 "#PWR029" H 6900 4400 50  0001 C CNN
-F 1 "GND" H 6905 4477 50  0000 C CNN
-F 2 "" H 6900 4650 50  0001 C CNN
-F 3 "" H 6900 4650 50  0001 C CNN
-	1    6900 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 4650 6900 4350
-Wire Wire Line
-	6900 4150 7000 4150
-Wire Wire Line
-	7000 4350 6900 4350
-Connection ~ 6900 4350
-Wire Wire Line
-	6900 4350 6900 4150
-Wire Wire Line
-	8000 4250 8100 4250
-Wire Wire Line
-	8100 4250 8100 4150
-Wire Wire Line
-	8100 4150 8000 4150
-Wire Wire Line
-	8000 4350 8100 4350
-Wire Wire Line
-	8100 4350 8100 4450
-Wire Wire Line
-	8100 4450 8000 4450
-Wire Wire Line
-	6600 4450 7000 4450
-Wire Wire Line
-	5900 4450 6600 4450
-Wire Wire Line
-	6300 4500 6300 4250
-Wire Wire Line
-	6300 4250 7000 4250
-Wire Wire Line
-	6300 4250 5900 4250
-Connection ~ 6300 4250
-Connection ~ 8100 4150
-Connection ~ 8100 4350
-$Comp
-L SamacSys_Parts:FM4004W-W D4
-U 1 1 60E9DBFC
-P 8600 3400
-F 0 "D4" V 8854 3530 50  0000 L CNN
-F 1 "FM4004W-W" V 8945 3530 50  0001 L CNN
-F 2 "SamacSys_Parts:DIOM5025X231N" H 9050 3400 50  0001 L CNN
-F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 9050 3300 50  0001 L CNN
-F 4 "Rectifiers 1A, 400V" H 9050 3200 50  0001 L CNN "Description"
-F 5 "2.31" H 9050 3100 50  0001 L CNN "Height"
-F 6 "583-FM4004W-W" H 9050 3000 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 9050 2900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Rectron" H 9050 2800 50  0001 L CNN "Manufacturer_Name"
-F 9 "FM4004W-W" H 9050 2700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8600 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L SamacSys_Parts:FM4004W-W D3
-U 1 1 60E9DC08
-P 8200 3450
-F 0 "D3" V 8450 3200 50  0000 L CNN
-F 1 "FM4004W-W" V 8550 2850 50  0000 L CNN
-F 2 "SamacSys_Parts:DIOM5025X231N" H 8650 3450 50  0001 L CNN
-F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 8650 3350 50  0001 L CNN
-F 4 "Rectifiers 1A, 400V" H 8650 3250 50  0001 L CNN "Description"
-F 5 "2.31" H 8650 3150 50  0001 L CNN "Height"
-F 6 "583-FM4004W-W" H 8650 3050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 8650 2950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Rectron" H 8650 2850 50  0001 L CNN "Manufacturer_Name"
-F 9 "FM4004W-W" H 8650 2750 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8200 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+12V #PWR031
-U 1 1 60E9DC0E
-P 8200 3350
-F 0 "#PWR031" H 8200 3200 50  0001 C CNN
-F 1 "+12V" H 8215 3523 50  0000 C CNN
-F 2 "" H 8200 3350 50  0001 C CNN
-F 3 "" H 8200 3350 50  0001 C CNN
-	1    8200 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR037
-U 1 1 60E9DC14
-P 8950 4650
-F 0 "#PWR037" H 8950 4500 50  0001 C CNN
-F 1 "+12V" H 8965 4823 50  0000 C CNN
-F 2 "" H 8950 4650 50  0001 C CNN
-F 3 "" H 8950 4650 50  0001 C CNN
-	1    8950 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 4350 8750 4850
-Wire Wire Line
-	8750 4850 9050 4850
-Wire Wire Line
-	8950 4750 8950 4650
-Wire Wire Line
-	8950 4750 9050 4750
-Wire Notes Line
-	10700 5100 5750 5100
-Text Label 8250 4150 0    39   ~ 0
-PWM2_D
-Text Label 8250 4350 0    39   ~ 0
-PWM3_D
-Wire Wire Line
-	8100 4150 8600 4150
-Wire Wire Line
-	8100 4350 8200 4350
-Wire Wire Line
-	8200 3350 8200 3450
-Wire Wire Line
-	8200 4050 8200 4350
-Connection ~ 8200 4350
-Wire Wire Line
-	8200 4350 8750 4350
-$Comp
-L power:+12V #PWR038
-U 1 1 60E9DC27
-P 9000 3950
-F 0 "#PWR038" H 9000 3800 50  0001 C CNN
-F 1 "+12V" H 9015 4123 50  0000 C CNN
-F 2 "" H 9000 3950 50  0001 C CNN
-F 3 "" H 9000 3950 50  0001 C CNN
-	1    9000 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 3950 9000 4050
-Wire Wire Line
-	9000 4050 9100 4050
-Wire Wire Line
-	8600 4000 8600 4150
-Connection ~ 8600 4150
-Wire Wire Line
-	8600 4150 9100 4150
-$Comp
-L power:+12V #PWR036
-U 1 1 60E9DC32
-P 8600 3350
-F 0 "#PWR036" H 8600 3200 50  0001 C CNN
-F 1 "+12V" H 8615 3523 50  0000 C CNN
-F 2 "" H 8600 3350 50  0001 C CNN
-F 3 "" H 8600 3350 50  0001 C CNN
-	1    8600 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 3350 8600 3400
-Wire Notes Line
-	5750 2850 10700 2850
-Wire Notes Line
-	10700 2850 10700 5100
-Wire Notes Line
-	5750 2850 5750 5100
+	3150 7350 3150 7400
+Connection ~ 3150 7350
 $Comp
 L Device:C C11
-U 1 1 60EAC9EA
-P 2850 7150
-F 0 "C11" H 2965 7196 50  0000 L CNN
-F 1 "10uF" H 2965 7105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2888 7000 50  0001 C CNN
-F 3 "~" H 2850 7150 50  0001 C CNN
-	1    2850 7150
+U 1 1 60E8BF68
+P 2200 7150
+F 0 "C11" H 2315 7196 50  0000 L CNN
+F 1 "22uF" H 2315 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2238 7000 50  0001 C CNN
+F 3 "~" H 2200 7150 50  0001 C CNN
+	1    2200 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 7000 2850 6950
+	1750 6950 2200 6950
 Wire Wire Line
-	2850 6950 2400 6950
-Connection ~ 2400 6950
+	2200 6950 2200 7000
+Connection ~ 1750 6950
 Wire Wire Line
-	2400 6950 2400 7000
+	2200 7300 2200 7350
 Wire Wire Line
-	2400 7350 2850 7350
+	2200 7350 1750 7350
+Connection ~ 2200 7350
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60EC4763
+P 10450 5950
+F 0 "H2" H 10550 5996 50  0000 L CNN
+F 1 "MountingHole" H 10550 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 10450 5950 50  0001 C CNN
+F 3 "~" H 10450 5950 50  0001 C CNN
+	1    10450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60EC4983
+P 10450 5750
+F 0 "H1" H 10550 5796 50  0000 L CNN
+F 1 "MountingHole" H 10550 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 10450 5750 50  0001 C CNN
+F 3 "~" H 10450 5750 50  0001 C CNN
+	1    10450 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 61102B86
+P 7400 5550
+F 0 "#PWR0101" H 7400 5400 50  0001 C CNN
+F 1 "+12V" H 7415 5723 50  0000 C CNN
+F 2 "" H 7400 5550 50  0001 C CNN
+F 3 "" H 7400 5550 50  0001 C CNN
+	1    7400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 61102B8C
+P 7400 5800
+F 0 "C14" H 7515 5846 50  0000 L CNN
+F 1 "100uF" H 7515 5755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7438 5650 50  0001 C CNN
+F 3 "~" H 7400 5800 50  0001 C CNN
+	1    7400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61102B92
+P 7850 6050
+F 0 "#PWR0102" H 7850 5800 50  0001 C CNN
+F 1 "GND" H 7855 5877 50  0000 C CNN
+F 2 "" H 7850 6050 50  0001 C CNN
+F 3 "" H 7850 6050 50  0001 C CNN
+	1    7850 6050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2850 7350 2850 7400
+	7400 5950 7400 6000
+$Comp
+L Device:C C15
+U 1 1 61102B99
+P 7850 5800
+F 0 "C15" H 7965 5846 50  0000 L CNN
+F 1 "100uF" H 7965 5755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7888 5650 50  0001 C CNN
+F 3 "~" H 7850 5800 50  0001 C CNN
+	1    7850 5800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2850 7300 2850 7350
-Connection ~ 2850 7350
+	7850 5650 7850 5600
+Wire Wire Line
+	7850 5600 7400 5600
+Wire Wire Line
+	7400 5550 7400 5600
+Connection ~ 7400 5600
+Wire Wire Line
+	7400 5600 7400 5650
+Wire Wire Line
+	7400 6000 7850 6000
+Wire Wire Line
+	7850 6000 7850 5950
+Wire Wire Line
+	7850 6000 7850 6050
+Connection ~ 7850 6000
+$Comp
+L SamacSys_Parts:DMN2029USD-13 IC?
+U 1 1 613006DB
+P 5500 3900
+F 0 "IC?" H 6000 4165 50  0000 C CNN
+F 1 "DMN2029USD-13" H 6000 4074 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 6350 4000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/DMN2029USD-13.pdf" H 6350 3900 50  0001 L CNN
+F 4 "DMN2029USD-13 Dual N-Channel MOSFET, 6.9 A, 20 V, 8-Pin SOIC Diodes Inc" H 6350 3800 50  0001 L CNN "Description"
+F 5 "1.75" H 6350 3700 50  0001 L CNN "Height"
+F 6 "621-DMN2029USD-13" H 6350 3600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-DMN2029USD-13" H 6350 3500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 6350 3400 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMN2029USD-13" H 6350 3300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:FM4004W-W D?
+U 1 1 61303539
+P 6650 3200
+F 0 "D?" H 6904 3330 50  0000 L CNN
+F 1 "FM4004W-W" H 6750 3050 50  0000 L CNN
+F 2 "DIOM5025X231N" H 7100 3200 50  0001 L CNN
+F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 7100 3100 50  0001 L CNN
+F 4 "Rectifiers 1A, 400V" H 7100 3000 50  0001 L CNN "Description"
+F 5 "2.31" H 7100 2900 50  0001 L CNN "Height"
+F 6 "583-FM4004W-W" H 7100 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 7100 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Rectron" H 7100 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "FM4004W-W" H 7100 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6650 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613049D4
+P 5400 4300
+F 0 "#PWR?" H 5400 4050 50  0001 C CNN
+F 1 "GND" H 5405 4127 50  0000 C CNN
+F 2 "" H 5400 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4300 5400 4100
+Wire Wire Line
+	5400 3900 5500 3900
+Wire Wire Line
+	5500 4100 5400 4100
+Connection ~ 5400 4100
+Wire Wire Line
+	5400 4100 5400 3900
+Wire Wire Line
+	5500 4000 4750 4000
+Wire Wire Line
+	5500 4200 5050 4200
+$Comp
+L Device:R R?
+U 1 1 61321CCA
+P 5050 4450
+F 0 "R?" H 5120 4496 50  0000 L CNN
+F 1 "10k" H 5120 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4980 4450 50  0001 C CNN
+F 3 "~" H 5050 4450 50  0001 C CNN
+	1    5050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61322BF0
+P 4750 4450
+F 0 "R?" H 4820 4496 50  0000 L CNN
+F 1 "10k" H 4820 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4680 4450 50  0001 C CNN
+F 3 "~" H 4750 4450 50  0001 C CNN
+	1    4750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6132311F
+P 5050 4650
+F 0 "#PWR?" H 5050 4400 50  0001 C CNN
+F 1 "GND" H 5055 4477 50  0000 C CNN
+F 2 "" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0001 C CNN
+	1    5050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61323BCC
+P 4750 4650
+F 0 "#PWR?" H 4750 4400 50  0001 C CNN
+F 1 "GND" H 4755 4477 50  0000 C CNN
+F 2 "" H 4750 4650 50  0001 C CNN
+F 3 "" H 4750 4650 50  0001 C CNN
+	1    4750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4600 5050 4650
+Wire Wire Line
+	4750 4600 4750 4650
+Wire Wire Line
+	4750 4300 4750 4000
+Connection ~ 4750 4000
+Wire Wire Line
+	4750 4000 4400 4000
+Wire Wire Line
+	5050 4300 5050 4200
+Connection ~ 5050 4200
+Wire Wire Line
+	5050 4200 4400 4200
+$Comp
+L SamacSys_Parts:691137710002 J?
+U 1 1 613421FC
+P 7450 3800
+F 0 "J?" H 8078 3796 50  0000 L CNN
+F 1 "691137710002" H 8078 3705 50  0000 L CNN
+F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 8100 3900 50  0001 L CNN
+F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 8100 3800 50  0001 L CNN
+F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 8100 3700 50  0001 L CNN "Description"
+F 5 "11.6" H 8100 3600 50  0001 L CNN "Height"
+F 6 "710-691137710002" H 8100 3500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 8100 3400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 8100 3300 50  0001 L CNN "Manufacturer_Name"
+F 9 "691137710002" H 8100 3200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:691137710002 J?
+U 1 1 61345C80
+P 7450 4150
+F 0 "J?" H 8078 4146 50  0000 L CNN
+F 1 "691137710002" H 8078 4055 50  0000 L CNN
+F 2 "SamacSys_Parts:SHDR2W70P0X500_1X2_1000X750X1160P" H 8100 4250 50  0001 L CNN
+F 3 "https://katalog.we-online.com/em/datasheet/691137710002.pdf" H 8100 4150 50  0001 L CNN
+F 4 "Wurth Elektronik WR-TBL Series 5mm Pitch, 2 Way, PCB Terminal Block, Through Hole" H 8100 4050 50  0001 L CNN "Description"
+F 5 "11.6" H 8100 3950 50  0001 L CNN "Height"
+F 6 "710-691137710002" H 8100 3850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691137710002?qs=lBTPRtX1sU9LnHBbviNKGA%3D%3D" H 8100 3750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 8100 3650 50  0001 L CNN "Manufacturer_Name"
+F 9 "691137710002" H 8100 3550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:FM4004W-W D?
+U 1 1 6135089E
+P 7050 3200
+F 0 "D?" H 7304 3330 50  0000 L CNN
+F 1 "FM4004W-W" H 7150 3050 50  0000 L CNN
+F 2 "DIOM5025X231N" H 7500 3200 50  0001 L CNN
+F 3 "http://www.rectron.com/public/product_datasheets/fm4001w-fm4007w.pdf" H 7500 3100 50  0001 L CNN
+F 4 "Rectifiers 1A, 400V" H 7500 3000 50  0001 L CNN "Description"
+F 5 "2.31" H 7500 2900 50  0001 L CNN "Height"
+F 6 "583-FM4004W-W" H 7500 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Rectron/FM4004W-W?qs=jY2200qj%252BWB%252ByCHJbbmOqA%3D%3D" H 7500 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Rectron" H 7500 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "FM4004W-W" H 7500 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7050 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 4000 6650 4000
+Wire Wire Line
+	6650 4000 6650 3900
+Wire Wire Line
+	6500 3900 6650 3900
+Connection ~ 6650 3900
+Wire Wire Line
+	6650 3900 6650 3800
+Wire Wire Line
+	6500 4200 6650 4200
+Wire Wire Line
+	6650 4200 6650 4100
+Wire Wire Line
+	6650 4100 6500 4100
+Wire Wire Line
+	6650 3900 7450 3900
+Wire Wire Line
+	7050 4100 7050 3800
+Connection ~ 6650 4100
+Wire Wire Line
+	6650 4100 7050 4100
+Wire Wire Line
+	7050 4100 7050 4250
+Wire Wire Line
+	7050 4250 7450 4250
+Connection ~ 7050 4100
+Wire Wire Line
+	7450 4150 7350 4150
+Wire Wire Line
+	7350 4150 7350 3800
+Wire Wire Line
+	7350 3800 7450 3800
+Wire Wire Line
+	7350 3800 7350 3600
+Connection ~ 7350 3800
+$Comp
+L power:+12V #PWR?
+U 1 1 613B94D5
+P 7350 3600
+F 0 "#PWR?" H 7350 3450 50  0001 C CNN
+F 1 "+12V" H 7365 3773 50  0000 C CNN
+F 2 "" H 7350 3600 50  0001 C CNN
+F 3 "" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 613B9E78
+P 7050 3150
+F 0 "#PWR?" H 7050 3000 50  0001 C CNN
+F 1 "+12V" H 7065 3323 50  0000 C CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 613BA3A7
+P 6650 3150
+F 0 "#PWR?" H 6650 3000 50  0001 C CNN
+F 1 "+12V" H 6665 3323 50  0000 C CNN
+F 2 "" H 6650 3150 50  0001 C CNN
+F 3 "" H 6650 3150 50  0001 C CNN
+	1    6650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3150 7050 3200
+Wire Wire Line
+	6650 3150 6650 3200
+Wire Wire Line
+	1400 1900 900  1900
+Text Label 4400 4000 0    50   ~ 0
+PWM0
+Text Label 4400 4200 0    50   ~ 0
+PWM1
+Text Label 6700 3900 0    50   ~ 0
+PWM0_D
+Text Label 6700 4100 0    50   ~ 0
+PWM1_D
 $EndSCHEMATC
