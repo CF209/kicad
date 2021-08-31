@@ -48,4 +48,16 @@ K
 F http://spec_sheets.e-switch.com/specs/P090008.pdf
 $ENDCMP
 #
+$CMP ESP32-C3-WROOM-02-H4
+D WiFi Modules (802.11) SMD module, ESP32-C3, 4MB SPI flash, PCB antenna, -40 C +105 C
+K
+F https://www.mouser.in/datasheet/2/891/Espressif_Systems_04082021_ESP32_C3_WROOM_02-2295851.pdf
+$ENDCMP
+#
+$CMP DMN3024LSD-13
+D Trans MOSFET N-CH 30V 7.2A Automotive 8-Pin SO T/R
+K
+F https://www.diodes.com/assets/Datasheets/DMN3024LSD.pdf
+$ENDCMP
+#
 #End Doc Library

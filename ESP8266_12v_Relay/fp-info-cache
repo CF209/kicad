@@ -1,4 +1,4 @@
-19047529025764415
+19052425983247415
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76307,6 +76307,20 @@ Diode
 2
 2
 SamacSys_Parts
+ESP32C3WROOM02H4
+ESP32-C3-WROOM-02-H4-3
+Integrated Circuit
+0
+27
+27
+SamacSys_Parts
+ESP32C3WROOM02N4
+ESP32-C3-WROOM-02-N4-1
+Integrated Circuit
+0
+27
+27
+SamacSys_Parts
 ESPWROOM02DM1102H3200PH3Q0
 ESP-WROOM-02D(M1102H3200PH3Q0)-4
 Integrated Circuit
@@ -76357,11 +76371,18 @@ Integrated Circuit
 8
 SamacSys_Parts
 SOIC127P600X175-8N
-soic8
-Integrated Circuit
+SO-8_4
+MOSFET (N-Channel)
 0
 8
 8
+SamacSys_Parts
+van_pic
+
+
+0
+0
+0
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
