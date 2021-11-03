@@ -1,3 +1,4 @@
+<pre>
 This repository is for backing up and sharing my PCB designs done in KICAD
 
 ESP8266_Water_Sensor
@@ -17,3 +18,4 @@ ESP32_12v_Relay
 	- The PCB is powered by 12V and uses a buck converter to step it down to 3.3V for the ESP32
 	- The ESP32 communicates to Home Assistant running on a Raspberry Pi over WIFI
 	- Designed to fit in the 1551TFLGY plastic enclosure
+</pre>
