@@ -1,18 +1,18 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8-0-10_14)*%
-%TF.CreationDate,2021-08-13T20:31:30-06:00*%
-%TF.ProjectId,ESP8266_Water_Sensor,45535038-3236-4365-9f57-617465725f53,rev?*%
-%TF.SameCoordinates,Original*%
-%TF.FileFunction,Profile,NP*%
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8-0-10_14)*
+G04 #@! TF.CreationDate,2021-10-21T22:22:27-07:00*
+G04 #@! TF.ProjectId,ESP8266_12v_Relay,45535038-3236-4365-9f31-32765f52656c,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.8-0-10_14)) date 2021-08-13 20:31:30*
+G04 Created by KiCad (PCBNEW (5.1.8-0-10_14)) date 2021-10-21 22:22:27*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
-%TA.AperFunction,Profile*%
+G04 #@! TA.AperFunction,Profile*
 %ADD10C,0.025400*%
-%TD*%
+G04 #@! TD*
 G04 APERTURE END LIST*
 D10*
 X223520000Y-83058000D02*
