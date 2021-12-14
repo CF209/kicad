@@ -60,4 +60,10 @@ K
 F https://www.diodes.com/assets/Datasheets/DMN3024LSD.pdf
 $ENDCMP
 #
+$CMP 1984675
+D PT 1,5/8-3,5-H PCB Terminal block 8way PT 1,5/8-3,5-H PCB Terminal block 8way
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA17/1074867.pdf
+$ENDCMP
+#
 #End Doc Library
